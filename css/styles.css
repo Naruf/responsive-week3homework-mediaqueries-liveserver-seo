@@ -3,7 +3,11 @@
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
+body {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
 h1,
 h2,
 h3 {
@@ -13,9 +17,11 @@ h3 {
 
 h1 {
   font-size: 96px;
+  line-height: 1.5;
 }
 
 h2 {
+  /* margin-top: 100px; */
   font-size: 48px;
 }
 
@@ -33,7 +39,11 @@ p {
   display: flex;
   justify-content: center;
 }
-
+.contact {
+  display: block;
+  margin-top: 80px;
+  padding: 0px;
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -41,6 +51,16 @@ p {
 }
 
 .navigation-buttons {
+  margin: 20px 20px 20px 0;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.navigation-button-header {
   margin: 20px 20px 20px 0;
   border-radius: 4px;
   padding: 20px 15px;
@@ -71,6 +91,7 @@ p {
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .email-link:hover {
@@ -78,4 +99,25 @@ p {
 }
 .navbar-padding {
   padding: 10px 100px 8px 100px;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .navigation-buttons {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .flag {
+    display: none;
+  }
+  body {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
 }
